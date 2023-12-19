@@ -27,7 +27,7 @@
     <ul class="navbar-nav ml-auto">
         <!-- Nav Item - Alerts -->
         <li class="nav-item">
-            <a class="nav-link text-secondary" href="#" role="button" style="font-size: 14px;">
+            <a class="nav-link text-secondary" href="#test" role="button" style="font-size: 14px;">
                 Dashboard
             </a>
         </li>
