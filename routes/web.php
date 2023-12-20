@@ -55,7 +55,7 @@ Route::get('halaman/detailsasaran', function () {
 
 
 //VISI
-Route::get('/visimisi', [VisiController::class, 'index'])->name('halaman.visimisi');
+Route::get('/visimisi', [VisiController::class, 'index'])->name('visimisi');
 Route::put('/visimisi-update/{id}', [VisiController::class, 'update']);
 Route::put('/visis', [VisiController::class, 'store'])->name('visi.store');
 Route::get('/visi/{id}', [VisiController::class, 'show']);
@@ -79,10 +79,10 @@ Route::post('/tujuan-store/{id}', [TujuanController::class, 'store']);
 Route::put('/tujuan-update/{id}', [TujuanController::class, 'update']);
 Route::delete('/hapus-tujuan/{id}', [TujuanController::class, 'destroy'])->name('hapus');
 //SASARAN
-Route::get('/sasaran', [SasaranController::class, 'index'])->name('halaman.sasaran');
+Route::get('/sasaran', [SasaranController::class, 'index'])->name('sasaran');
 Route::post('/sasaran-store/{id}', [SasaranController::class, 'store']);
 Route::put('/sasaran-update/{id}', [SasaranController::class, 'update']);
 Route::delete('/hapus-sasaran/{id}', [SasaranController::class, 'destroy'])->name('hapus');
 Route::get('/sasaran/search', [SasaranController::class, 'search']);
 //DETAIL SASARAN
-Route::get('detailsasaran/{id}', [SasaranController::class, 'detail'])->name('halaman.detailsasaran');
+Route::get('detailsasaran/{id}', [SasaranController::class, 'detail'])->name('detailsasaran');

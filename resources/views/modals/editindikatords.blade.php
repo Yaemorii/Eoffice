@@ -29,6 +29,7 @@
                         <select class="form-control" name="satuan_pengukuran">
                             <option selected="selected">{{$i->satuan_pengukuran}}</option>
                             <option value="Lokasi">Lokasi</option>
+                            <option value="Indeks">Indeks</option>
                             <option value="Kegiatan">Kegiatan</option>
                             <option value="Titik">Titik</option>
                             <option value="Sasaran">Sasaran</option>

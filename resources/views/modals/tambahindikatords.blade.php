@@ -28,6 +28,7 @@
                         <select class="form-control" name="satuan_pengukuran">
                             <option selected="selected" disabled="true">Pilih Satuan Pengukuran</option>
                             <option value="Lokasi">Lokasi</option>
+                            <option value="Indeks">Indeks</option>
                             <option value="kegiatan">Kegiatan</option>
                             <option value="Titik">Titik</option>
                             <option value="Sasaran">Sasaran</option>
