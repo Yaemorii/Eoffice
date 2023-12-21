@@ -7,6 +7,7 @@ use App\Models\Misi;
 use App\Models\Indikator;
 use App\Models\Tujuan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class VisiController extends Controller
 {    
@@ -17,19 +18,17 @@ class VisiController extends Controller
      */
     public function index()
     {
-        
-        $visis = Visi::all()->where('id','1');
-        $misi = Misi::all();
-        $indikator = Indikator::all();
-        $tujuan = Tujuan::all();
-        return view('halaman/visimisi',compact('visis','misi','indikator','tujuan'));
-       
+        if (Auth::user()->role === 'Admin') {
+            $visis = Visi::all()->where('id','1');
+            $misi = Misi::all();
+            $indikator = Indikator::all();
+            $tujuan = Tujuan::all();
+            return view('halaman/visimisi',compact('visis','misi','indikator','tujuan'));
+        } else {
+            return redirect('/login')->with('fail', 'Anda Bukan Admin');
+        }
     }
-
-    
-
-    
-    
+  
     /**
      * create
      *

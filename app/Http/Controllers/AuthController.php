@@ -20,19 +20,21 @@ class AuthController extends Controller
         $credentials = $request->only('username', 'password');
     
         if (Auth::attempt($credentials)) {
-        return redirect()->route('halaman.visimisi')->with(['success' => 'Login berhasil!', 'Sukses']);
+            if (Auth::user()->role === 'Admin') {
+                return redirect()->route('halaman.visimisi')->with(['success' => 'Login berhasil!', 'Sukses']);
+            } else {
+                Auth::logout();
+                return redirect()->route('halaman.login')->with('fail', 'Anda Bukan Admin');
+            }
         }
     
         toastr()->error('Login gagal. Mohon cek kembali.', 'Error');
         return redirect()->route('login');
     }
 
-    public function logout(Request $request)
+    public function logout()
     {
         Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
         return redirect()->route('login');
     }
     

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('username')->unique();
             $table->string('nip')->nullable(); // tambahkan kolom nip
+            $table->string('role')->default('Admin'); // tambahkan kolom role dengan nilai default 'Admin'
             $table->string('password');
             $table->string('password_reset_token')->nullable(); // tambahkan kolom password_reset_token
             $table->rememberToken();

@@ -9,18 +9,21 @@ use App\Models\Indikator;
 use App\Models\Tujuan;
 use App\Models\IndikatorSasaran;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SasaranController extends Controller
 {
     public function index()
     {
-        //get visis
-        $sasaran = Sasaran::all();
-       
-        $misi = Misi::all();
-        $indikator = Indikator::all();
-        $tujuan = Tujuan::all();
-        return view('halaman/sasaran', compact('sasaran', 'misi', 'indikator', 'tujuan'));
+        if (Auth::user()->role === 'Admin') {
+            $sasaran = Sasaran::all();
+            $misi = Misi::all();
+            $indikator = Indikator::all();
+            $tujuan = Tujuan::all();
+            return view('halaman/sasaran', compact('sasaran', 'misi', 'indikator', 'tujuan'));
+        } else {
+            return redirect('/login')->with('fail', 'Anda Bukan Admin');
+        }
     }
 
     public function store(Request $request,$id)
