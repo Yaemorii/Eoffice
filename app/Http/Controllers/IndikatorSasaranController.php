@@ -6,11 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Models\IndikatorSasaran;
 use App\Models\Sasaran;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class IndikatorSasaranController extends Controller
 {
     public function store(Request $request, $id){
-
+        if (Auth::user()->role === 'Admin') {
+            
         IndikatorSasaran::create([
             'sasaran_id'           => $id,
             'indikator'            => $request->indikator,
@@ -28,19 +30,30 @@ class IndikatorSasaranController extends Controller
         //redirect to index
         $sasaran = Sasaran::find($id);
         return redirect('detailsasaran/'.$sasaran->id)->with(['success' => 'Indikator Berhasil Disimpan!']);
+        } else {
+            return redirect('/login')->with('fail', 'Anda Bukan Admin');
+        }
     }
 
     public function update(Request $request,$id){
+        if (Auth::user()->role === 'Admin') {
         $i = IndikatorSasaran::findorfail($id);
 
         $i->update($request->all());
         return redirect()->back()->with(['success' => 'Indikator Berhasil Diganti!']);
+        } else {
+            return redirect('/login')->with('fail', 'Anda Bukan Admin');
+        }
     }
 
     public function destroy($id){
+        if (Auth::user()->role === 'Admin') {
         $indikator = IndikatorSasaran::findorfail($id);
         $indikator->delete();
         $sasaran = Sasaran::find($indikator->sasaran_id);
         return redirect('detailsasaran/'.$sasaran->id)->with(['info' => 'Indikator Berhasil Dihapus!']);
+        } else {
+            return redirect('/login')->with('fail', 'Anda Bukan Admin');
+        }
     }
 }

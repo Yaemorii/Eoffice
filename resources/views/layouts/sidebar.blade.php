@@ -45,7 +45,7 @@
 
                 <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-1 collapse-inner rounded">
-                        <a class="collapse-item text-secondary" href="/login">
+                        <a class="collapse-item text-secondary" href="/logout">
                         <i class="fa-solid fa-arrow-right-from-bracket mr-1"></i>Log Out
                         </a>
                     </div>

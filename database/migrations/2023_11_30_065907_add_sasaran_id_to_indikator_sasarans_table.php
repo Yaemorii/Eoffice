@@ -10,7 +10,7 @@ class AddSasaranIdToIndikatorSasaransTable extends Migration
     {
         Schema::table('indikator_sasarans', function (Blueprint $table) {
             $table->unsignedBigInteger('sasaran_id')->nullable();; // Tambahkan kolom sasaran_id
-            $table->foreign('sasaran_id')->references('id')->on('sasarans'); // Tambahkan constraint foreign key
+            $table->foreign('sasaran_id')->references('id')->on('sasarans')->onDelete('cascade'); // Tambahkan constraint foreign key
         });
     }
 

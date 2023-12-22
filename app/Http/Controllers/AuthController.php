@@ -20,19 +20,16 @@ class AuthController extends Controller
         $credentials = $request->only('username', 'password');
     
         if (Auth::attempt($credentials)) {
-        return redirect()->route('visimisi')->with(['success' => 'Login berhasil!', 'Sukses']);
+        return redirect()->route('halaman.visimisi')->with(['success' => 'Login berhasil!', 'Sukses']);
         }
     
         toastr()->error('Login gagal. Mohon cek kembali.', 'Error');
         return redirect()->route('login');
     }
 
-    public function logout(Request $request)
+    public function logout()
     {
         Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
         return redirect()->route('login');
     }
     

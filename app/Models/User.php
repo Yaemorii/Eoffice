@@ -22,6 +22,7 @@ class User extends Authenticatable
         'email',
         'password',
         'nip', // Tambahkan kolom nip
+        'role',
         'password_reset_token', // Tambahkan kolom password_reset_token
     ];
 

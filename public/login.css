@@ -93,16 +93,3 @@ body {
     color: #007bff;
 }
 
-#forgotBtn {
-    padding: 12px; /* Diperbesar paddingnya */
-    background-color: #08a4c4;
-    color: #fff;
-    border: none;
-    border-radius: 6px; /* Diperbesar radiusnya */
-    cursor: pointer;
-}
-
-#forgotBtn:hover {
-    background-color: #15bcdd; /* Warna latar belakang saat kursor berada di atas tombol */
-    color: #ffffff; /* Warna teks saat kursor berada di atas tombol */
-}
