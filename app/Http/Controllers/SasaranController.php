@@ -22,7 +22,7 @@ class SasaranController extends Controller
             $tujuan = Tujuan::all();
             return view('halaman/sasaran', compact('sasaran', 'misi', 'indikator', 'tujuan'));
         } else {
-            return redirect('/login')->with('fail', 'Anda Bukan Admin');
+            return redirect('login')->with('fail', 'Anda Bukan Admin');
         }
     }
 

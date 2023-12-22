@@ -23,7 +23,7 @@ class AuthController extends Controller
         return redirect()->route('halaman.visimisi')->with(['success' => 'Login berhasil!', 'Sukses']);
         }
     
-        toastr()->error('Login gagal. Mohon cek kembali.', 'Error');
+        toastr()->error('Username atau Password anda salah, mohon coba lagi', 'Error');
         return redirect()->route('login');
     }
 

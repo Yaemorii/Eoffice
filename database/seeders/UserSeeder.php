@@ -20,5 +20,14 @@ class UserSeeder extends Seeder
             'role' => 'Admin', // Tambahkan peran 'Admin'
         ]);
 
+        User::create([
+            'name' => 'Muhammad_Nabil',
+            'nip' => '2003',
+            'email' => 'nabil@gmail.com',
+            'username' => 'nabil',
+            'password' => Hash::make('nabil'),
+            'role' => 'Admin', // Tambahkan peran 'Admin'
+        ]);
+
     }
 }
