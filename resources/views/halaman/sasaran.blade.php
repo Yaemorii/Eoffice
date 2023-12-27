@@ -86,7 +86,7 @@
                                                             <th>No.</th>
                                                             <th>Kode</th>
                                                             <th>Nama Sasaran</th>
-                                                            <th>Action</th>
+                                                            <th>Opsi</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>

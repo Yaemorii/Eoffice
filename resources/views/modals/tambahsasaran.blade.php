@@ -12,7 +12,7 @@
                 <form action="/sasaran-store/{id}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="misi">KODE</label><br>
+                        <label for="misi">Kode</label><br>
                         <input name="kode" placeholder="Masukkan Kode" class="form-control">
                     </div>
                     <div class="form-group">
