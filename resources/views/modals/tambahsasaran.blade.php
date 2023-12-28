@@ -17,29 +17,30 @@
                     </div>
                     <div class="form-group">
                         <label for="misi">Misi</label>
-                        <select class="form-control" name="misi">
+                        <!-- Dropdown Misi -->
+                        <select class="form-control" name="misi" id="misiDropdown">
                             @foreach ($misi as $m)
-                            <option value="{{ $m->misi }}">{{ $m->misi }}</option>
+                                <option value="{{ $m->misi }}" data-target="{{ $m->misi }}">
+                                    {{ $m->misi }}</option>
                             @endforeach
-                            <!-- Tambahkan pilihan misi sesuai kebutuhan -->
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="tujuan">Tujuan</label>
-                        <select class="form-control" name="tujuan">
+                        <select class="form-control" name="tujuan" id="tujuanDropdown">
                             @foreach ($tujuan as $t)
-                            <option value="{{ $t->tujuan }}">{{ $t->tujuan }}</option>
+                                <option value="{{ $t->tujuan }}" data-parent="{{ $t->parent }}">
+                                    {{ $t->tujuan }}</option>
                             @endforeach
-                            <!-- Tambahkan pilihan tujuan sesuai kebutuhan -->
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="indikatorTujuan">Indikator Tujuan</label>
-                        <select class="form-control" name="indikator_tujuan">
+                        <select class="form-control" name="indikator_tujuan" id="indikatorTujuanDropdown">
                             @foreach ($indikator as $i)
-                            <option value="{{ $i->indikator }}">{{ $i->indikator }}</option>
+                                <option value="{{ $i->indikator }}" data-parent="{{ $i->parent }}">
+                                    {{ $i->indikator }}</option>
                             @endforeach
-                            <!-- Tambahkan pilihan indikator tujuan sesuai kebutuhan -->
                         </select>
                     </div>
                     <div class="form-group">

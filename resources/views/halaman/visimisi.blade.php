@@ -162,7 +162,7 @@
                                                 data-target="#tambahTujuanModal{{ $m->id }}">
                                                 <i class="fas fa-plus">
                                                 </i>
-                                                Tambah Tujuan Misi {{ $m->id }}
+                                                Tambah Tujuan Misi {{ $loop->iteration }}
                                             </button>
                                             @include('modals.tambahtujuan')
                                         </div>
