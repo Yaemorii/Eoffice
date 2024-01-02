@@ -1,0 +1,10 @@
+1 misi memiliki banyak tujuan
+1 tujuan memiliki banyak indikator(tujuan)
+1 sasaran memiliki masing2 1 misi, tujuan, indikator tujuan
+1 sasaran memiliki banyak indikator(sasaran)
+
+inverse
+1 tujuan memiliki 1 misi
+1 indikator memiliki 1 tujuan
+//1 misi, tujuan dan indikator tujuan memiliki 1 sasaran (?)
+1 indikator(sasaran) memiliki 1 sasaran

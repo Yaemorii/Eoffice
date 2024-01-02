@@ -1,0 +1,111 @@
+.navbar-right {
+    background-color: #08a4c4;
+    height: 40px;
+    font-size: 14px;
+}
+
+.custom-navbar {
+    background-color: #08a4c4;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#editVisiBtn {
+    background-color: #08a4c4;
+}
+
+#tambahMisiBtn {
+    color: #08a4c4; /* Warna teks awal */
+    border-color: #08a4c4; /* Warna border awal */
+}
+
+#simpanMisiBtn {
+    background-color: #08a4c4;
+}
+
+#tambahMisiBtn:hover {
+    background-color: #08a4c4; /* Warna latar belakang saat kursor berada di atas tombol */
+    border-color: #08a4c4; /* Warna border saat kursor berada di atas tombol */
+    color: #ffffff; /* Warna teks saat kursor berada di atas tombol */
+}
+
+#tambahTujuanBtn {
+    color: #08a4c4; /* Warna teks awal */
+    border-color: #08a4c4; /* Warna border awal */
+}
+
+#tambahTujuanBtn:hover {
+    background-color: #08a4c4; /* Warna latar belakang saat kursor berada di atas tombol */
+    border-color: #08a4c4; /* Warna border saat kursor berada di atas tombol */
+    color: #ffffff; /* Warna teks saat kursor berada di atas tombol */
+}
+
+#tambahIndikatorBtn {
+    color: #08a4c4; /* Warna teks awal */
+    border-color: #08a4c4; /* Warna border awal */
+}
+
+#tambahIndikatorBtn:hover {
+    background-color: #08a4c4; /* Warna latar belakang saat kursor berada di atas tombol */
+    border-color: #08a4c4; /* Warna border saat kursor berada di atas tombol */
+    color: #ffffff; /* Warna teks saat kursor berada di atas tombol */
+}
+
+#ubahVisiBtn {
+    background-color: #08a4c4;
+}
+
+#ubahMisiBtn {
+    background-color: #08a4c4;
+}
+
+#tujuanMisiBtn {
+    background-color: #08a4c4;
+}
+
+#simpanIndikatorBtn {
+    background-color: #08a4c4;
+}
+
+#tambahSasaranBtn {
+    background-color: #08a4c4;
+}
+
+#tambahSasaranBtn:hover {
+    background-color: #15bcdd; /* Warna latar belakang saat kursor berada di atas tombol */
+    color: #ffffff; /* Warna teks saat kursor berada di atas tombol */
+}
+
+#ubahTujuanBtn {
+    background-color: #08a4c4;
+}
+
+#filterBtn {
+    color: #08a4c4; /* Warna teks awal */
+    border-color: #08a4c4; /* Warna border awal */
+}
+
+#filterBtn:hover {
+    background-color: #08a4c4; /* Warna latar belakang saat kursor berada di atas tombol */
+    border-color: #08a4c4; /* Warna border saat kursor berada di atas tombol */
+    color: #ffffff; /* Warna teks saat kursor berada di atas tombol */
+}
+
+#tambahIndikatordsBtn {
+    background-color: #08a4c4;
+}
+
+#tambahIndikatordsBtn:hover {
+    background-color: #15bcdd; /* Warna latar belakang saat kursor berada di atas tombol */
+    color: #ffffff; /* Warna teks saat kursor berada di atas tombol */
+}
+
+#ubahIndikatordsBtn {
+    background-color: #08a4c4;
+}
+
+#ubahSasaranBtn {
+    background-color: #08a4c4;
+}
