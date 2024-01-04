@@ -30,7 +30,6 @@
                 <!-- Topbar -->
                 @include('layouts.navbarsasaran')
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <div class="container mt-3">
@@ -48,7 +47,7 @@
                                         </td>
                                         <td>
                                             <b>Tujuan</b>
-                                            <p>{{ $sasaran->tujuan }}</p>
+                                            <p>{{ $sasaran->Tujuan->tujuan }}</p>
                                         </td>
                                     </tr>
                             </div>
@@ -59,14 +58,14 @@
                                 </div>
                                 <div>
                                     <div>
-                                        {{ $sasaran->misi }}
+                                        {{ $sasaran->Misi->misi }}
                                     </div>
                                 </div>
                             </td>
                             <td>
                                 <b>Indikator Tujuan</b>
                                 <p>
-                                    {{ $sasaran->indikator_tujuan }}
+                                    {{ $sasaran->Indikator->indikator }}
                                 </p>
                                 </tr>
                                 </table>

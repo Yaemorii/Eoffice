@@ -83,7 +83,7 @@ class SasaranController extends Controller
 
     public function detail($id)
     {
-        $sasaran = Sasaran::find($id);
+        // $sasaran = Sasaran::find($id);
         $visi = Visi::all();
        
         $sasaran = Sasaran::with('indikatorSasarans')->find($id);

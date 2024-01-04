@@ -24,14 +24,14 @@ class Sasaran extends Model
     }
 
     public function Misi(){
-        return $this->hasOne(Misi::class);
+        return $this->hasOne(Misi::class, 'id', 'misi');
     }
 
     public function Tujuan(){
-        return $this->hasOne(Tujuan::class);
+        return $this->hasOne(Tujuan::class, 'id', 'tujuan');
     }
 
     public function Indikator(){
-        return $this->hasOne(Indikator::class);
+        return $this->hasOne(Indikator::class, 'id', 'indikator_tujuan');
     }
 }
