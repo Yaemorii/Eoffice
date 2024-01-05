@@ -22,6 +22,7 @@
                         <label for="misi">Misi</label>
                         <!-- Dropdown Misi -->
                         <select class="form-control" name="misi" id="misiDropdown">
+                            <option value="" selected disabled>Pilih Misi</option>
                             @foreach ($misi as $m)
                                 <option value="{{ $m->id }}">{{ $m->misi }}</option>
                             @endforeach

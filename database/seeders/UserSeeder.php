@@ -29,5 +29,23 @@ class UserSeeder extends Seeder
             'role' => 'Admin', // Tambahkan peran 'Admin'
         ]);
 
+        User::create([
+            'name' => 'admin',
+            'nip' => '2003',
+            'email' => 'admin@gmail.com',
+            'username' => 'admin',
+            'password' => Hash::make('admin'),
+            'role' => 'Admin', // Tambahkan peran 'Admin'
+        ]);
+
+        User::create([
+            'name' => 'Edo',
+            'nip' => '1993',
+            'email' => 'Edo@gmail.com',
+            'username' => 'edo',
+            'password' => Hash::make('edo'),
+            'role' => 'Admin', // Tambahkan peran 'Admin'
+        ]);
+
     }
 }

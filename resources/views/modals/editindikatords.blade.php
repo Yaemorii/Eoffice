@@ -27,7 +27,7 @@
                     <div class="form-group">
                         <label for="satuanPengukuran"><b>Satuan Pengukuran</b></label>
                         <select class="form-control" name="satuan_pengukuran">
-                            <option selected="selected">{{$i->satuan_pengukuran}}</option>
+                            <option selected="selected" disabled="true">Pilih Satuan Pengukuran</option>
                             <option value="Lokasi">Lokasi</option>
                             <option value="Indeks">Indeks</option>
                             <option value="Kegiatan">Kegiatan</option>
@@ -35,8 +35,7 @@
                             <option value="Sasaran">Sasaran</option>
                             <option value="SR">SR</option>
                             <option value="Kali">Kali</option>
-                            <option value="Minggu sekali dalam setahun">Minggu sekali dalam setahun
-                            </option>
+                            <option value="Minggu sekali dalam setahun">Minggu sekali dalam setahun</option>
                             <option value="Forum/Kampung">Forum/Kampung</option>
                             <option value="Kelompok">Kelompok</option>
                             <option value="Orang">Orang</option>
@@ -58,10 +57,15 @@
                             <option value="Penyuluh">Penyuluh</option>
                             <option value="Tokoh">Tokoh</option>
                             <option value="Responden">Responden</option>
+                            <option value="Tahun">Tahun</option>
                             <option value="Bulan">Bulan</option>
                             <option value="Minggu">Minggu</option>
                             <option value="Hari">Hari</option>
                             <option value="%">%</option>
+                            <option value="Kategori">Kategori</option>
+                            <option value="Nilai">Nilai</option>
+                            <option value="Opini">Opini</option>
+                            <option value="Angka">Angka</option>
                             <!-- Tambahkan pilihan satuan pengukuran lainnya di sini -->
                         </select>
                     </div>

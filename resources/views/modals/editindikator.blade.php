@@ -30,42 +30,45 @@
                      <div class="form-group">
                          <label for="satuanPengukuran">Satuan Pengukuran:</label>
                          <select class="form-control" name="satuan_pengukuran">
-                             <option selected="selected" value="{{ $i->satuan_pengukuran }}">{{ $i->satuan_pengukuran }}</option>
-                             <option value="Lokasi">Lokasi</option>
-                             <option value="Indeks">Indeks</option>
-                             <option value="Kegiatan">Kegiatan</option>
-                             <option value="Titik">Titik</option>
-                             <option value="Sasaran">Sasaran</option>
-                             <option value="SR">SR</option>
-                             <option value="Kali">Kali</option>
-                             <option value="minggu sekali dalam setahun">minggu
-                                 sekali dalam setahun</option>
-                             <option value="Forum/Kampung">Forum/Kampung</option>
-                             <option value="Kelompok">Kelompok</option>
-                             <option value="Orang">Orang</option>
-                             <option value="KK">KK</option>
-                             <option value="Hektar">Hektar</option>
-                             <option value="Unit">Unit</option>
-                             <option value="Ha">Ha</option>
-                             <option value="m3/detik">m3/detik</option>
-                             <option value="KM">KM</option>
-                             <option value="Kecamatan">Kecamatan</option>
-                             <option value="Route">Route</option>
-                             <option value="Paket">Paket</option>
-                             <option value="Organisasi">Organisasi</option>
-                             <option value="Sekolah/Pesantren">Sekolah/Pesantren
-                             </option>
-                             <option value="Sekolah">Sekolah</option>
-                             <option value="Siswa/guru">Siswa/guru</option>
-                             <option value="Siswa">Siswa</option>
-                             <option value="Peserta">Peserta</option>
-                             <option value="Penyuluh">Penyuluh</option>
-                             <option value="Tokoh">Tokoh</option>
-                             <option value="Responden">Responden</option>
-                             <option value="Bulan">Bulan</option>
-                             <option value="Minggu">Minggu</option>
-                             <option value="Hari">Hari</option>
-                             <option value="%">%</option>
+                            <option selected="selected" disabled="true">Pilih Satuan Pengukuran</option>
+                            <option value="Lokasi">Lokasi</option>
+                            <option value="Indeks">Indeks</option>
+                            <option value="Kegiatan">Kegiatan</option>
+                            <option value="Titik">Titik</option>
+                            <option value="Sasaran">Sasaran</option>
+                            <option value="SR">SR</option>
+                            <option value="Kali">Kali</option>
+                            <option value="Minggu sekali dalam setahun">Minggu sekali dalam setahun</option>
+                            <option value="Forum/Kampung">Forum/Kampung</option>
+                            <option value="Kelompok">Kelompok</option>
+                            <option value="Orang">Orang</option>
+                            <option value="KK">KK</option>
+                            <option value="Hektar">Hektar</option>
+                            <option value="Unit">Unit</option>
+                            <option value="Ha">Ha</option>
+                            <option value="m3/detik">m3/detik</option>
+                            <option value="KM">KM</option>
+                            <option value="Kecamatan">Kecamatan</option>
+                            <option value="Route">Route</option>
+                            <option value="Paket">Paket</option>
+                            <option value="Organisasi">Organisasi</option>
+                            <option value="Sekolah/Pesantren">Sekolah/Pesantren</option>
+                            <option value="Sekolah">Sekolah</option>
+                            <option value="Siswa/guru">Siswa/guru</option>
+                            <option value="Siswa">Siswa</option>
+                            <option value="Peserta">Peserta</option>
+                            <option value="Penyuluh">Penyuluh</option>
+                            <option value="Tokoh">Tokoh</option>
+                            <option value="Responden">Responden</option>
+                            <option value="Tahun">Tahun</option>
+                            <option value="Bulan">Bulan</option>
+                            <option value="Minggu">Minggu</option>
+                            <option value="Hari">Hari</option>
+                            <option value="%">%</option>
+                            <option value="Kategori">Kategori</option>
+                            <option value="Nilai">Nilai</option>
+                            <option value="Opini">Opini</option>
+                            <option value="Angka">Angka</option>
                              <!-- Tambahkan pilihan satuan pengukuran lainnya di sini -->
                          </select>
                      </div>
