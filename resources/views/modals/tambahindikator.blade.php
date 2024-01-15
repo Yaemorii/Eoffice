@@ -32,13 +32,13 @@
                         <select class="form-control" name="satuan_pengukuran">
                             <option selected="selected" disabled="true">Pilih Satuan Pengukuran</option>
                             <option value="Lokasi">Lokasi</option>
-                            <option value="Indeks">Indeks</option>
                             <option value="Kegiatan">Kegiatan</option>
                             <option value="Titik">Titik</option>
                             <option value="Sasaran">Sasaran</option>
+                            <option value="Indeks">Indeks</option>
                             <option value="SR">SR</option>
                             <option value="Kali">Kali</option>
-                            <option value="Minggu sekali dalam setahun">Minggu sekali dalam setahun</option>
+                            <option value="minggu sekali dalam setahun">minggu sekali dalam setahun</option>
                             <option value="Forum/Kampung">Forum/Kampung</option>
                             <option value="Kelompok">Kelompok</option>
                             <option value="Orang">Orang</option>
@@ -67,8 +67,10 @@
                             <option value="%">%</option>
                             <option value="Kategori">Kategori</option>
                             <option value="Nilai">Nilai</option>
+                            <option value="Skor">Skor</option>
                             <option value="Opini">Opini</option>
                             <option value="Angka">Angka</option>
+                            <option value="Rp">Rp</option>
                             <!-- Tambahkan pilihan satuan pengukuran lainnya di sini -->
                         </select>
                     </div>
