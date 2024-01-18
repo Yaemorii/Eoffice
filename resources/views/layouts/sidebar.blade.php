@@ -37,7 +37,7 @@
                     <i class="fas fa-fw fa-cog"></i>
                     <div class="text-center">
                         <img src="../img/user.png" alt="Admin Logo" class="admin-logo mb-2" width="50" height="50" href="#">
-                        <span class="d-block text-gray-600">Administrator                       
+                        <span class="d-block text-gray-600">{{ Auth::user()->name }}                      
                         <i class="fa-solid fa-caret-down text-secondary ml-2"></i>
                     </span>
                     </div>
